@@ -19,12 +19,12 @@ jobs:
       run: |
         g++ -o ringbuffer_amd64 ringbuffer.cpp
         riscv64-linux-gnu-g++-12 -o ringbuffer_riscv64 ringbuffer.cpp
-    - name: upload-artifact
+    - name: upload-binary-amd64
       uses: actions/upload-artifact@v4
       with:
         name: ringbuffer-binary-amd64
         path: ringbuffer_amd64
-    - name: upload-artifact
+    - name: upload-binary-riscv64
       uses: actions/upload-artifact@v4
       with:
         name: ringbuffer-binary-amd64
