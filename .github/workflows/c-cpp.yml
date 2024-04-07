@@ -27,5 +27,5 @@ jobs:
     - name: upload-binary-riscv64
       uses: actions/upload-artifact@v4
       with:
-        name: ringbuffer-binary-amd64
+        name: ringbuffer-binary-riscv64
         path: ringbuffer_riscv64
